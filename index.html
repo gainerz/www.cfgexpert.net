@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company PR | Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0d0f12;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            overflow: hidden;
+        }
+
+        /* Spacer to balance vertical centering */
+        .spacer {
+            height: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .brand {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #a0aec0;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtext {
+            font-size: 1.125rem;
+            color: #718096;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .pulse-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #6366f1;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+            box-shadow: 0 0 12px #6366f1;
+            animation: pulse 2s infinite;
+        }
+
+        footer {
+            font-size: 0.875rem;
+            color: #4a5568;
+            letter-spacing: 0.5px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(0.85);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spacer"></div>
+
+    <div class="container">
+        <div class="brand">
+            <span class="pulse-dot"></span>cfgExpert.net
+        </div>
+        <h1>Site is under construction</h1>
+        <p class="subtext">Check back soon for updates.</p>
+    </div>
+
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> Viktor Sergeev PR Novi Sad. All rights reserved.
+    </footer>
+</body>
+</html>
